@@ -9,9 +9,10 @@ Orquestrador: Airflow
 Cloud: AWS
 Analytics: Quicksight
 
-## Tabela de Conteúdo
+## Tecnologias utilizadas
 
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- [Linguagens: Python, SQL]
+- [BD: Postgres](#uso)
+- [Orquestrador: Airflow]
+- [Cloud: AWS](#licença]
+- [Analytics: Quicksight]
