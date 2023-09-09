@@ -11,8 +11,8 @@ Analytics: Quicksight
 
 ## Tecnologias utilizadas
 
-- [Linguagens: Python, SQL]
-- [BD: Postgres]
-- [Orquestrador: Airflow]
-- [Cloud: AWS]
-- [Analytics: Quicksight]
+- Linguagens: Python, SQL
+- BD: Postgres
+- Orquestrador: Airflow
+- Cloud: AWS
+- Analytics: Quicksight
