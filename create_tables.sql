@@ -14,7 +14,7 @@ popularity int,
 followers bigint);
 
 CREATE TABLE spotify.tracks (
-track_id varchar(22) PRIMARY KEY
+track_id varchar(22) PRIMARY KEY,
 album_id varchar(22),
 artist_id varchar(22),
 name varchar(150),
