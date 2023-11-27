@@ -24,3 +24,7 @@ Para que o projeto funcionasse como esperado, foi necessário recorrer à biblio
 ## Instalação e Configuração do AirFlow
 
 O AirFlow torna-se o componente mais complexo à ser configurado para execução e orquestração do processo de ETL. Para que ele funcione e seja instanciado na máquina é preciso que ele seja instalado junto com dependencias relacionadas a versão do python que é desejado utilizar. No projeto, foi utilizado a versão 3.8. Para mais informações a respeito da instalação do AirFlow, todo processo é explicado na documentação oficial no quickstart: https://airflow.apache.org/docs/apache-airflow/stable/start.html
+
+## Credenciais
+
+Algumas credenciais foram removidas do script, pois elas podem dar acesso á api do usuário e também ao banco de dados criado na AWS, para replicar o projeto é necessário passar nos parâmetros os respectivos valores para conectar no Banco de Dados: "database", "user", "password", "host", "port". Para conectar a API é necessário acessar o site "https://developer.spotify.com/" gerar um id e token e passa-los o formato "id:token" na variável auth_string(todas varíaveis presentes no script "spotify_etl.py").
