@@ -1,1 +1,7 @@
-
+base64
+requests
+time
+json
+pandas
+psycopg2
+datetime 
