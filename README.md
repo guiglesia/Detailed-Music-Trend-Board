@@ -20,3 +20,7 @@ Analytics: Quicksight
 ## Dependências do Projeto
 
 Para que o projeto funcionasse como esperado, foi necessário recorrer à bibliotecas externas, essa bibliotecas possuem métodos que podem ser reútilizados para realizar certas instruções. As dependências para o funcionamento dos scripts estão presentes no diretório root, no arquivo "requirementes.txt", após o clone do repositório basta abrir o terminal e dar o comando "pip3 install -r requirements.txt" no diretório que ele está localizado.
+
+## Instalação e Configuração do AirFlow
+
+O AirFlow torna-se o componente mais complexo à ser configurado para execução e orquestração do processo de ETL. Para que ele funcione e seja instanciado na máquina é preciso que ele seja instalado junto com dependencias relacionadas a versão do python que é desejado utilizar. No projeto, foi utilizado a versão 3.8. Para mais informações a respeito da instalação do AirFlow, todo processo é explicado na documentação oficial no quickstart: https://airflow.apache.org/docs/apache-airflow/stable/start.html
