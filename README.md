@@ -19,7 +19,9 @@ Analytics: Quicksight
 
 ## Dependências do Projeto
 
-Para que o projeto funcionasse como esperado, foi necessário recorrer à bibliotecas externas, essa bibliotecas possuem métodos que podem ser reútilizados para realizar certas instruções. As dependências para o funcionamento dos scripts estão presentes no diretório root, no arquivo "requirementes.txt", após o clone do repositório basta abrir o terminal e dar o comando "pip3 install -r requirements.txt" no diretório que ele está localizado.
+Para que o projeto funcionasse como esperado, foi necessário recorrer à bibliotecas externas, essa bibliotecas possuem métodos que podem ser reútilizados para realizar certas instruções. As dependências para o funcionamento dos scripts estão presentes no diretório root, no arquivo "requirementes.txt", após o clone do repositório basta abrir o terminal e dar o comando "pip3 install -r requirements.txt" no diretório que ele está localizado. Além das biblitecas utilizadas no código, mais outras depedências foram instaladas juntamente com Airflow, como é explorado no tópico de instalação do airflow.
+Lista de instalações no ambiente virtual criado para o projeto:
+![Lista de bibliotecas](https://github.com/guiglesia/Detailed-Music-Trend-Board/blob/master/images/venv.png)
 
 ## Instalação e Configuração do AirFlow
 
