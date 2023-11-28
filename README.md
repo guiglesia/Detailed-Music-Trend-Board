@@ -17,9 +17,14 @@ Analytics: Quicksight
 - Cloud: AWS
 - Analytics: Quicksight
 
+## Arquitetura do Projeto
+
+![Arquitetura](https://github.com/guiglesia/Detailed-Music-Trend-Board/blob/master/images/fluxo.drawio.png)
+
 ## Dependências do Projeto
 
 Para que o projeto funcionasse como esperado, foi necessário recorrer à bibliotecas externas, essa bibliotecas possuem métodos que podem ser reútilizados para realizar certas instruções. As dependências para o funcionamento dos scripts estão presentes no diretório root, no arquivo "requirementes.txt", após o clone do repositório basta abrir o terminal e dar o comando "pip3 install -r requirements.txt" no diretório que ele está localizado. Além das biblitecas utilizadas no código, mais outras depedências foram instaladas juntamente com Airflow, como é explorado no tópico de instalação do airflow.
+
 Lista de instalações no ambiente virtual criado para o projeto:
 ![Lista de bibliotecas](https://github.com/guiglesia/Detailed-Music-Trend-Board/blob/master/images/venv.png)
 
@@ -27,13 +32,16 @@ Lista de instalações no ambiente virtual criado para o projeto:
 
 O AirFlow torna-se o componente mais complexo à ser configurado para execução e orquestração do processo de ETL. Para que ele funcione e seja instanciado na máquina é preciso que ele seja instalado junto com dependencias relacionadas a versão do python que é desejado utilizar. No projeto, foi utilizado a versão 3.8. Para mais informações a respeito da instalação do AirFlow, todo processo é explicado na documentação oficial no quickstart: https://airflow.apache.org/docs/apache-airflow/stable/start.html
 
+Instalação do Airflow com a versão Python utilizada no projeto:
+![Instalação do Airflow](https://github.com/guiglesia/Detailed-Music-Trend-Board/blob/master/images/airflow%20install.png)
+
 ## Credenciais
 
 Algumas credenciais foram removidas do script, pois elas podem dar acesso á API e também ao banco de dados criado na AWS. Para replicar o projeto é necessário atribuir valores as váriaveis relacionadas a credenciais do Banco de Dados, essas são: "database", "user", "password", "host", "port". Para conectar a API é necessário acessar o site "https://developer.spotify.com/" gerar um id e token e passa-los o formato "id:token" na variável auth_string(todas varíaveis presentes no script "spotify_etl.py").
 
 ## Banco de dados
 
-O banco de dados utilizado foi o RDS:Postgre do tipo relacional. O script de criação do seu schema está presente no arquivo "create_tables.sql".
+O banco de dados utilizado foi o RDS:Postgre do tipo relacional. O script de criação do seu schema está presente no arquivo "create_tables.sql". Para fazer a conexão e permitir inserções via script Python, foi utilizada a biblioteca "psycopg2".
 
 ## Inicialização do Airflow
 
